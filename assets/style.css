@@ -175,6 +175,10 @@ main .pokemon-card .bulbassaur-btn .open-popup {
     border: none;
 }
 
+main .open-popup {
+    font-size: 16px;
+}
+
 main .open-popup:hover {
     cursor: pointer;
     color: white
@@ -184,11 +188,15 @@ main .open-popup:hover {
     position: relative;
     font-size: 2rem;
     padding: 10px;
-
+    color: white
 }
 
 .bxs-x-circle:hover {
     cursor: pointer;
+}
+
+h3 {
+    text-align: center;
 }
 
 #popup-bulbasaur {
@@ -203,13 +211,12 @@ main .open-popup:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 320px;
-    height: 65%;
+    height: 80%;
     padding: 10px;
     box-shadow: 0 5px 30px rgba(0, 0, 0, 3);
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
-    color:white
 }
 
 /*=======================BACKGROUND===================*/
@@ -279,20 +286,168 @@ main .open-popup:hover {
     }
 }
 
-#popup-bulbasaur.active {
+#popup-bulbasaur.bulbasaur {
     top: 50%;
     visibility: visible;
     opacity: 1;
     transition: 0.5s;
 }
 
-#popup-bulbasaur .data-container {
-
-    font-size: 14px;
-    padding-right: 10px;
+#popup-bulbasaur .pokemon-name-popup {
+    color: white;
+    font-size: 25px;
 }
 
-#popup-bulbasaur .types-weaknesses{
+#popup-bulbasaur .data-container {
+    font-size: 14px;
+    color: white
+}
+
+#popup-bulbasaur .types-weaknesses {
     display: flex;
     gap: 15px;
+}
+
+#popup-bulbasaur .weak-fire {
+    color: rgb(224, 75, 75);
+}
+
+#popup-bulbasaur .weak-psychic {
+    color: rgb(255, 0, 170);
+}
+
+#popup-bulbasaur .weak-flying {
+    color: rgb(189, 179, 179);
+}
+
+#popup-bulbasaur .weak-ice {
+    color: rgb(81, 168, 218);
+}
+
+/*=====================================IVYSAUR==============================================*/
+
+#popup-ivysaur {
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    height: 80%;
+    padding: 10px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 3);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+/*=======================BACKGROUND===================*/
+
+#popup-ivysaur {
+    background: linear-gradient(269deg, #33e40b, #a90be4);
+    background-size: 400% 400%;
+    -webkit-animation: grass-poison 26s ease infinite;
+    -moz-animation: grass-poison 26s ease infinite;
+    -o-animation: grass-poison 26s ease infinite;
+    animation: grass-poison 26s ease infinite;
+}
+
+@-webkit-keyframes grass-poison {
+    0% {
+        background-position: 0% 52%
+    }
+
+    50% {
+        background-position: 100% 49%
+    }
+
+    100% {
+        background-position: 0% 52%
+    }
+}
+
+@-moz-keyframes grass-poison {
+    0% {
+        background-position: 0% 52%
+    }
+
+    50% {
+        background-position: 100% 49%
+    }
+
+    100% {
+        background-position: 0% 52%
+    }
+}
+
+@-o-keyframes grass-poison {
+    0% {
+        background-position: 0% 52%
+    }
+
+    50% {
+        background-position: 100% 49%
+    }
+
+    100% {
+        background-position: 0% 52%
+    }
+}
+
+@keyframes grass-poison {
+    0% {
+        background-position: 0% 52%
+    }
+
+    50% {
+        background-position: 100% 49%
+    }
+
+    100% {
+        background-position: 0% 52%
+    }
+}
+
+#popup-ivysaur.ivysaur {
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#popup-ivysaur .pokemon-name-popup {
+    color: white;
+    font-size: 25px;
+}
+
+#popup-ivysaur .data-container {
+    font-size: 14px;
+    color: white
+}
+
+#popup-ivysaur .types-weaknesses {
+    justify-content: space-evenly;
+    display: flex;
+    gap: 15px;
+}
+
+#popup-ivysaur .weak-fire {
+    color: rgb(224, 75, 75);
+}
+
+#popup-ivysaur .weak-psychic {
+    color: rgb(255, 0, 170);
+}
+
+#popup-ivysaur .weak-flying {
+    color: rgb(189, 179, 179);
+}
+
+#popup-ivysaur .weak-ice {
+    color: rgb(81, 168, 218);
 }
