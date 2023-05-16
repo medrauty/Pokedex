@@ -13,4 +13,3 @@ function toggleIvysaur() {
     var popupIvysaur = document.getElementById('popup-ivysaur');
     popupIvysaur.classList.toggle('ivysaur')
 }
-
