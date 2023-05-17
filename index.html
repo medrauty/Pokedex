@@ -37,7 +37,7 @@
                         There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows
                         larger.
                     </p>
-                    <div class="bulbasaur-btn" id="bulbasaur-btn">
+                    <div>
                         <button class="open-popup" onclick="toggleBulbasaur()">
                             <h4>More Info</h4>
                         </button>
@@ -56,7 +56,7 @@
                     <p class="poke-info">
                         When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.
                     </p>
-                    <div class="ivysaur-btn" id="ivysaur-btn">
+                    <div>
                         <button class="open-popup" onclick="toggleIvysaur()">
                             <h4>More Info</h4>
                         </button>
@@ -75,6 +75,11 @@
                     <p class="poke-info">
                         Its plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.
                     </p>
+                    <div>
+                        <button class="open-popup" onclick="toggleVenusaur()">
+                            <h4>More Info</h4>
+                        </button>
+                    </div>
                 </li>
                 <li class="pokemon-card fire-type">
                     <div class="pokemon-name">
@@ -89,6 +94,9 @@
                         It has a preference for hot things. When it rains, steam is said to spout from the tip of its
                         tail.
                     </p>
+                    <button class="open-popup" onclick="toggleCharmander()">
+                        <h4>More Info</h4>
+                    </button>
                 </li>
                 <li class="pokemon-card fire-type">
                     <div class="pokemon-name">
@@ -103,6 +111,9 @@
                         It has a barbaric nature. In battle, it whips its fiery tail around and slashes away with sharp
                         claws.
                     </p>
+                    <button class="open-popup" onclick="toggleCharmeleon()">
+                        <h4>More Info</h4>
+                    </button>
                 </li>
                 <li class="pokemon-card fire-type">
                     <div class="pokemon-name">
@@ -117,6 +128,9 @@
                     <p class="poke-info">
                         It spits fire that is hot enough to melt boulders. It may cause forest fires by blowing flames.
                     </p>
+                    <button class="open-popup" onclick="toggleCharizard()">
+                        <h4>More Info</h4>
+                    </button>
                 </li>
                 <li class="pokemon-card water-type">
                     <div class="pokemon-name">
@@ -130,10 +144,13 @@
                     <p class="poke-info">
                         When it retracts its long neck into its shell, it squirts out water with vigorous force.
                     </p>
+                    <button class="open-popup" onclick="toggleSquirtle()">
+                        <h4>More Info</h4>
+                    </button>
                 </li>
                 <li class="pokemon-card water-type">
                     <div class="pokemon-name">
-                        <span>Wartotle</span>
+                        <span>Wartortle</span>
                         <span>#008</span>
                     </div>
                     <img src="./assets/imagens/wartortle.gif" alt="wartortle" class="gif">
@@ -144,6 +161,9 @@
                         It is recognized as a symbol of longevity. If its shell has algae on it, that Wartortle is very
                         old.
                     </p>
+                    <button class="open-popup" onclick="toggleWartortle()">
+                        <h4>More Info</h4>
+                    </button>
                 </li>
                 <li class="pokemon-card water-type">
                     <div class="pokemon-name">
@@ -159,6 +179,9 @@
                         its
                         shell.
                     </p>
+                    <button class="open-popup" onclick="toggleBlastoise()">
+                        <h4>More Info</h4>
+                    </button>
                 </li>
                 <li class="pokemon-card bug-type">
                     <div class="pokemon-name">
@@ -173,6 +196,9 @@
                         For protection, it releases a horrible stench from the antenna on its head to drive away
                         enemies.
                     </p>
+                    <button class="open-popup" onclick="toggleCaterpie()">
+                        <h4>More Info</h4>
+                    </button>
                 </li>
             </ul>
         </main>
@@ -182,11 +208,11 @@
         <div class="pokemon-name-popup">
             <span>Bulbasaur</span>
         </div>
+        <h3>The seed pokemon</h3>
         <img src="./assets/imagens/001.png" alt="" class="poke-foto">
         <div class="data-container">
             <p>
-                Bulbasaur, the seed pokemon<br>
-                Height : 71cm<br>Weight: 6,8Kg<br>
+                Height: 71cm<br>Weight: 6,8Kg<br>
                 Abilities: Overgrow
             </p>
             <h3>Weaknesses</h2>
@@ -198,16 +224,17 @@
             <li class="weak-ice">Ice</li>
         </ul>
     </div>
+    <!==============IVYSAUR===============>
     <div class="popup-ivysaur" id="popup-ivysaur">
         <button class="close-popup" onclick="toggleIvysaur()"><i class='bx bxs-x-circle'></i></button>
         <div class="pokemon-name-popup">
             <span>Ivysaur</span>
         </div>
+        <h3>The seed pokemon</h3>
         <img src="./assets/imagens/002.png" alt="" class="poke-foto">
         <div class="data-container">
             <p>
-                Ivysaur, the seed pokemon<br>
-                Height : 99 cm<br>Weight: 130 Kg<br>
+                Height: 99 cm<br>Weight: 13 Kg<br>
                 Abilities: Overgrow
             </p>
             <h3>Weaknesses</h2>
@@ -219,6 +246,173 @@
             <li class="weak-ice">Ice</li>
         </ul>
     </div>
+    <!==============VENUSAUR============>
+    <div class="popup-venusaur" id="popup-venusaur">
+        <button class="close-popup" onclick="toggleVenusaur()"><i class='bx bxs-x-circle'></i></button>
+        <div class="pokemon-name-popup">
+            <span>Venusaur</span>
+        </div>
+        <h3>The seed pokemon</h3>
+        <img src="./assets/imagens/003.png" alt="" class="poke-foto">
+        <div class="data-container">
+            <p>
+                Height: 200 cm<br>Weight: 100 Kg<br>
+                Abilities: Overgrow
+            </p>
+            <h3>Weaknesses</h2>
+        </div>
+        <ul class="types-weaknesses">
+            <li class="weak-fire">Fire</li>
+            <li class="weak-psychic">Psychic</li>
+            <li class="weak-flying">Flying</li>
+            <li class="weak-ice">Ice</li>
+        </ul>
+    </div>
+    <!==============Charmander============>
+    <div class="popup-charmander" id="popup-charmander">
+        <button class="close-popup" onclick="toggleCharmander()"><i class='bx bxs-x-circle'></i></button>
+        <div class="pokemon-name-popup">
+            <span>Charmander</span>
+        </div>
+        <h3>The lizard pokemon<br></h3>
+        <img src="./assets/imagens/004.png" alt="" class="poke-foto">
+        <div class="data-container">
+            <p>
+                Height: 61 cm<br>Weight: 8,4 Kg<br>
+                Abilities: Blaze
+            </p>
+            <h3>Weaknesses</h2>
+        </div>
+        <ul class="types-weaknesses">
+            <li class="weak-water">Water</li>
+            <li class="weak-ground">Ground</li>
+            <li class="weak-rock">Rock</li>
+        </ul>
+    </div>
+    <!==============Charmeleon============>
+    <div class="popup-charmeleon" id="popup-charmeleon">
+        <button class="close-popup" onclick="toggleCharmeleon()"><i class='bx bxs-x-circle'></i></button>
+        <div class="pokemon-name-popup">
+            <span>Charmeleon</span>
+        </div>
+        <h3>The flame pokemon<br></h3>
+        <img src="./assets/imagens/005.png" alt="" class="poke-foto">
+        <div class="data-container">
+            <p>
+                Height: 109 cm<br>Weight: 19 Kg<br>
+                Abilities: Blaze
+            </p>
+            <h3>Weaknesses</h2>
+        </div>
+        <ul class="types-weaknesses">
+            <li class="weak-water">Water</li>
+            <li class="weak-ground">Ground</li>
+            <li class="weak-rock">Rock</li>
+        </ul>
+    </div>
+    <!==============Charizard============>
+    <div class="popup-charizard" id="popup-charizard">
+        <button class="close-popup" onclick="toggleCharizard()"><i class='bx bxs-x-circle'></i></button>
+        <div class="pokemon-name-popup">
+            <span>Charizard</span>
+        </div>
+        <h3>The flame pokemon<br></h3>
+        <img src="./assets/imagens/006.png" alt="" class="poke-foto">
+        <div class="data-container">
+            <p>
+                Height: 170 cm<br>Weight: 90,5 Kg<br>
+                Abilities: Blaze
+            </p>
+            <h3>Weaknesses</h2>
+        </div>
+        <ul class="types-weaknesses">
+            <li class="weak-water">Water</li>
+            <li class="weak-ground">Ground</li>
+            <li class="weak-rock">Rock</li>
+        </ul>
+    </div>
+    <!==============Squirtle===========>
+    <div class="popup-squirtle" id="popup-squirtle">
+        <button class="close-popup" onclick="toggleSquirtle()"><i class='bx bxs-x-circle'></i></button>
+        <div class="pokemon-name-popup">
+            <span>Squirtle</span>
+        </div>
+        <h3>The tiny turtle pokemon<br></h3>
+        <img src="./assets/imagens/007.png" alt="" class="poke-foto">
+        <div class="data-container">
+            <p>
+                Height: 51 cm<br>Weight:9 Kg<br>
+                Abilities: Torrent
+            </p>
+            <h3>Weaknesses</h2>
+        </div>
+        <ul class="types-weaknesses">
+            <li class="weak-grass">Grass</li>
+            <li class="weak-eletric">Eletric</li>
+        </ul>
+    </div>
+    <!==============Wartortle============>
+    <div class="popup-wartortle" id="popup-wartortle">
+        <button class="close-popup" onclick="toggleWartortle()"><i class='bx bxs-x-circle'></i></button>
+        <div class="pokemon-name-popup">
+            <span>Wartortle</span>
+        </div>
+        <h3>The turtle pokemon<br></h3>
+        <img src="./assets/imagens/008.png" alt="" class="poke-foto">
+        <div class="data-container">
+            <p>
+                Height: 99 cm<br>Weight: 22,5 Kg<br>
+                Abilities: Torrent
+            </p>
+            <h3>Weaknesses</h2>
+        </div>
+        <ul class="types-weaknesses">
+            <li class="weak-grass">Grass</li>
+            <li class="weak-eletric">Eletric</li>
+        </ul>
+    </div>
+    <!==============Blastoise============>
+    <div class="popup-blastoise" id="popup-blastoise">
+        <button class="close-popup" onclick="toggleBlastoise()"><i class='bx bxs-x-circle'></i></button>
+        <div class="pokemon-name-popup">
+            <span>Blastoise</span>
+        </div>
+        <h3>The shellfish pokemon<br></h3>
+        <img src="./assets/imagens/009.png" alt="" class="poke-foto">
+        <div class="data-container">
+            <p>
+                Height: 160 cm<br>Weight: 85 Kg<br>
+                Abilities: Torrent
+            </p>
+            <h3>Weaknesses</h2>
+        </div>
+        <ul class="types-weaknesses">
+            <li class="weak-grass">Grass</li>
+            <li class="weak-eletric">Eletric</li>
+        </ul>
+    </div>
+    <!==============Caterpie============>
+    <div class="popup-caterpie" id="popup-caterpie">
+        <button class="close-popup" onclick="toggleCaterpie()"><i class='bx bxs-x-circle'></i></button>
+        <div class="pokemon-name-popup">
+            <span>Caterpie</span>
+        </div>
+        <h3>The worm pokemon<br></h3>
+        <img src="./assets/imagens/010.png" alt="" class="poke-foto">
+        <div class="data-container">
+            <p>
+                Height: 30 cm<br>Weight: 2,9 Kg<br>
+                Abilities: Shield Dust
+            </p>
+            <h3>Weaknesses</h2>
+        </div>
+        <ul class="types-weaknesses">
+            <li class="weak-fire">Fire</li>
+            <li class="weak-flying">Flying</li>
+            <li class="weak-rock">Rock</li>
+        </ul>
+    </div>
     <script src="./assets/index.js"></script>
 </body>
+
 </html>
