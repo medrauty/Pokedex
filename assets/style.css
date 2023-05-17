@@ -96,11 +96,8 @@ main .pokemon-card .pokemon-name {
     border: 1px solid #333333;
 }
 
-main .pokemon-card .pokemon-name {
-    display: flex;
-    justify-content: space-between;
-    border-radius: 15px;
-    border: 1px solid #333333;
+main .pokemon-card:hover .pokemon-name{
+    border: 1px solid #fff
 }
 
 main .pokemon-card .pokemon-name span {
