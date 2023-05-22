@@ -1,5 +1,15 @@
 /* ===== Scrollbar CSS ===== */
 
+/*====Remove Scrollbar from all browsers====*/
+.body::-webkit-scrollbar {
+  display: none;
+}
+
+.body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 *::-webkit-scrollbar {
     width: 12px;
   }
